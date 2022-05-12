@@ -5,7 +5,17 @@
 
 .slider {
   margin: 40px auto 0;
-  max-width: 720px;
+  max-width: 740px;
+}
+
+.slider-labels {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.slider-item {
+  border: 10px solid #000;
+  background: #000;
 }
 
 .slider-wrapper {
@@ -19,19 +29,23 @@
 }
 
 .slider-label {
-  display: none;
+  margin-left: -130px;
 }
 
 .slider-controls {
   display: flex;
-  gap: 10px;
   justify-content: flex-end;
 }
 
-.slider-control span:hover {
+.slider-control:hover > span {
   background: red;
-  transform: scale(1.5);
+  transform: scale(2);
   transition: all 0.5s;
+}
+
+.slider-control {
+  padding: 0px 10px 20px;
+  cursor: pointer;
 }
 
 .slider-controls span {
@@ -39,24 +53,22 @@
   height: 8px;
   border-radius: 50px;
   background: #000;
-  cursor: pointer;
   display: block;
   border: 2px solid transparent;
   transition: all 0.5s;
 }
 
 .radio {
-  display: none;
+  opacity: 0;
 }
 
 .slider-item1, .slider-item2, .slider-item3, .slider-item4 {
-  display: none;
+  opacity: 0;
 }
 
 .radio1:checked ~ .slider-item1 {
-  display: block;
   opacity: 1;
-  transition: all 0.5s;
+  transition: all 2s;
 }
 
 .radio1:checked ~ .slider-controls #l1 span {
@@ -64,13 +76,13 @@
 }
 
 .radio1:checked ~ .slider-labels .lb1 {
-  display: block;
+  margin-left: 0;
+  transition: all 2s;
 }
 
 .radio2:checked ~ .slider-item2 {
-  display: block;
   opacity: 1;
-  transition: all 0.5s;
+  transition: all 2s;
 }
 
 .radio2:checked ~ .slider-controls #l2 span {
@@ -78,13 +90,13 @@
 }
 
 .radio2:checked ~ .slider-labels .lb2 {
-  display: block;
+  margin-left: 0;
+  transition: all 2s;
 }
 
 .radio3:checked ~ .slider-item3 {
-  display: block;
   opacity: 1;
-  transition: all 0.5s;
+  transition: all 2s;
 }
 
 .radio3:checked ~ .slider-controls #l3 span {
@@ -92,13 +104,13 @@
 }
 
 .radio3:checked ~ .slider-labels .lb3 {
-  display: block;
+  margin-left: 0;
+  transition: all 2s;
 }
 
 .radio4:checked ~ .slider-item4 {
-  display: block;
   opacity: 1;
-  transition: all 0.5s;
+  transition: all 2s;
 }
 
 .radio4:checked ~ .slider-controls #l4 span {
@@ -106,5 +118,14 @@
 }
 
 .radio4:checked ~ .slider-labels .lb4 {
-  display: block;
+  margin-left: 0;
+  transition: all 2s;
+}
+
+.slider-item2, .slider-item3, .slider-item4 {
+  margin-top: -384px;
+}
+
+.lb2, .lb3, .lb4 {
+  margin-top: -18px;
 }
