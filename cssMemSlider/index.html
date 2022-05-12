@@ -5,7 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Mem Slider</title>
+  <link href="./assets/style.css" rel="stylesheet" />
 </head>
 <body>
+  <div class="slider">
+    <input type="radio" name="slider" class="radio1 radio" id="r1" checked>
+    <input type="radio" name="slider" class="radio2 radio" id="r2">
+    <input type="radio" name="slider" class="radio3 radio" id="r3">
+    <input type="radio" name="slider" class="radio4 radio" id="r4">
+    <div class="slider-item slider-item1"><img src="./assets/img/1.jpg" /></div>
+    <div class="slider-item slider-item2"><img src="./assets/img/2.jpg"  /></div>
+    <div class="slider-item slider-item3"><img src="./assets/img/3.jpg" /></div>
+    <div class="slider-item slider-item4"><img src="./assets/img/4.jpg" /></div>
+      <div class="slider-labels">
+        <div class="slider-label lb1">Meme template 1</div>
+        <div class="slider-label lb2">Meme template 2</div>
+        <div class="slider-label lb3">Meme template 3</div>
+        <div class="slider-label lb4">Meme template 4</div>
+      </div>
+      <div class="slider-controls">
+        <label for="r1" class="slider-control" id="l1"><span></span></label>
+        <label for="r2" class="slider-control" id="l2"><span></span></label>
+        <label for="r3" class="slider-control" id="l3"><span></span></label>
+        <label for="r4" class="slider-control" id="l4"><span></span></label>
+      </div>
+  </div>
 </body>
 </html>
