@@ -140,5 +140,14 @@
 }
 
 @media all and (max-width: 425px) {
-  
+  .bottom-wrapper {
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    align-items: stretch;
+  }
+
+  .slider-controls {
+    justify-content: center;
+  }
 }
